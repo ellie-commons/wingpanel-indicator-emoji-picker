@@ -1,11 +1,11 @@
-# i18n.merge_file(
-#     input: 'keyboard.metainfo.xml.in',
-#     output: 'io.elementary.wingpanel.keyboard.metainfo.xml',
-#     po_dir: meson.project_source_root() / 'po' / 'extra',
-#     type: 'xml',
-#     install: true,
-#     install_dir: get_option('datadir') / 'metainfo',
-# )
+i18n.merge_file(
+    input: 'emoji-picker.metainfo.xml.in',
+    output: 'io.github.ellie_commons.wingpanel-indicator-emoji-picker.metainfo.xml',
+    po_dir: meson.project_source_root() / 'po' / 'extra',
+    type: 'xml',
+    install: true,
+    install_dir: get_option('datadir') / 'metainfo',
+)
 
 install_data(
     'list.json',

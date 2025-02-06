@@ -1,31 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2019-2024 elementary, Inc. <contact@elementary.io> -->
 <component type="addon">
-  <id>io.elementary.wingpanel.keyboard</id>
-  <extends>io.elementary.wingpanel</extends>
-  <translation type="gettext">keyboard-indicator</translation>
+  <id>io.github.ellie_commons.wingpanel-indicator-emoji-picker</id>
+  <extends>io.github.ellie_commons.wingpanel-indicator-emoji-picker</extends>
+  <translation type="gettext">emoji-picker-indicator</translation>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
 
-  <icon type="stock">preferences-desktop-keyboard</icon>
-  <name>Keyboard Indicator</name>
-  <summary>The keyboard indicator</summary>
+  <icon type="stock">face-smile</icon>
+  <name>Emoji Picker Indicator</name>
+  <summary>Emoji Picker Indicator</summary>
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/wingpanel-indicator-keyboard/2.4.2/data/screenshot.png</image>
+      <image>https://raw.githubusercontent.com/ellie-commons/wingpanel-indicator-emoji-picker/refs/heads/main/data/wingpanel-indicator-emoji-picker.png</image>
     </screenshot>
   </screenshots>
 
-  <url type="homepage">https://elementary.io/</url>
-  <url type="bugtracker">https://github.com/elementary/wingpanel-indicator-keyboard/issues</url>
-  <url type="donation">https://elementary.io/get-involved#funding</url>
-  <url type="help">https://github.com/elementary/wingpanel-indicator-keyboard/discussions</url>
-  <url type="translate">https://l10n.elementary.io/engage/switchboard/</url>
+  <url type="homepage">https://github.com/ellie-commons/wingpanel-indicator-emoji-picker</url>
+  <url type="bugtracker">https://github.com/ellie-commons/wingpanel-indicator-emoji-picker/issues</url>
 
-  <developer id="org.elementaryos">
-    <name>elementary, Inc.</name>
+  <developer id="io.github.ellie_commons">
+    <name>elementary Commons</name>
   </developer>
-  <project_group>elementary</project_group>
-  <update_contact>contact_at_elementary.io</update_contact>
+  <update_contact>alainmh23@gmail.com</update_contact>
 </component>

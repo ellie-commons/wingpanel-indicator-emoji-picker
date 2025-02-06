@@ -1,7 +1,7 @@
 project(
     'emoji-picker',
     'vala', 'c',
-    version: '8.0.0',
+    version: '1.0.0',
     meson_version : '>= 0.58'
 )
 
