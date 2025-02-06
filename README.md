@@ -1,95 +1,31 @@
-# elementary App Template
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
-_a template to develop Apps for [elementary OS](https://elementary.io/) and its AppCenter_
+<div align="center">
+  <h1 align="center">Emoji Picker</h1>
+  <h3 align="center">A sleek and fast emoji picker designed for elementary OS. Easily find and copy emojis with an intuitive and minimalist interface</h3>
+</div>
 
-This template is based on the official [elementary Developer Documentation](https://docs.elementary.io/develop/). Simply download it and your ready to hack!
+![Screenshot](https://raw.githubusercontent.com/ellie-commons/wingpanel-indicator-emoji-picker/refs/heads/main/data/wingpanel-indicator-emoji-picker.png)
 
-## Table of Contents
+## Building and Installation
 
-- [Prerequisites](#prerequisites)
-- [Build System](#build-system)
-- [Translations](#translations)
-- [Icons](#icons)
-- [Packaging](#packaging)
-- [Testing](#testing)
+You'll need the following dependencies:
 
-## Prerequisites
+    gobject-introspection
+    libglib2.0-dev
+    libgranite-dev >= 6.0.0
+    libnotify-dev
+    libwingpanel-dev
+    meson >= 0.58.0
+    libjson-glib-dev
+    valac
 
-This app template assumes you installed the following as documented in [The Basic Setup of the elementary Developer Documentation](https://docs.elementary.io/develop/writing-apps/the-basic-setup):
-
-- Development Libraries (`elementary-sdk`)
-- elementary Flatpak Platform and Sdk (`io.elementary.Platform` and `io.elementary.Sdk`)
-
-## Build System
-
-The Build System is preconfigured an ready to use according to [The Build System described in the elementary Developer Documentation](https://docs.elementary.io/develop/writing-apps/our-first-app/the-build-system).
-
-### Compile, Install and Start
-
-Run `meson build` to configure the build environment. Change to the build directory and run `ninja` to build
+Run `meson` to configure the build environment and then `ninja` to build
 
     meson build --prefix=/usr
     cd build
     ninja
 
-To install, use `ninja install`, then execute with `io.github.alainm23.planify`
+To install, use `ninja install`
 
     sudo ninja install
-    io.github.ellie_commons.byte
-
-### Uninstall
-
-Execute the following command to remove the app template's binary from your system:
-
-```bash
-sudo ninja uninstall
-```
-
-## Translations
-
-This template is fully translatable and everything is setup as described in the [Translations section of the elementary Developer Documentation](https://docs.elementary.io/develop/writing-apps/our-first-app/translations)'
-
-### Update translations
-
-Remember that each time you add new translatable strings or change old ones, you should regenerate your `*.pot` and `*.po` files using the `*-pot` and `*-update-po` build targets from the previous two steps as follows:
-
-```bash
-ninja io.github.ellie_commons.byte-pot
-ninja io.github.ellie_commons.byte-update-po
-```
-
-### Add more languages
-
-If you want to support more languages, just list them in the LINGUAS file and generate the new po file with the `*-update-po` target:
-
-```bash
-ninja -C build io.github.ellie_commons.byte-update-po
-```
-
-## Icons
-
-Support for icons is configured too according to the [Icons section of the elementary Developer Documentation](https://docs.elementary.io/develop/writing-apps/our-first-app/icons).
-
-## Packaging
-
-Support for Flatpak is builtin as well and setup according to the [Packaging section of the elementary Developer Documentation](https://docs.elementary.io/develop/writing-apps/our-first-app/packaging).
-
-### Compile, Package and Install
-
-To run a test build and install your app, you can execute flatpak-builder from the project root:
-
-```bash
-flatpak-builder build io.github.ellie_commons.byte.yml --user --install --force-clean --install-deps-from=appcenter
-```
-
-Then execute with
-
-```bash
-flatpak run io.github.ellie_commons.byte
-```
-
-### Uninstall
-
-```bash
-flatpak uninstall io.github.ellie_commons.byte --user
-```
