@@ -5,7 +5,11 @@
   <h3 align="center">A sleek and fast emoji picker designed for elementary OS. Easily find and copy emojis with an intuitive and minimalist interface</h3>
 </div>
 
-![Screenshot](https://raw.githubusercontent.com/ellie-commons/wingpanel-indicator-emoji-picker/refs/heads/main/data/wingpanel-indicator-emoji-picker.png)
+<div align="center">
+    <span align="center">
+        <img class="center" src="data/wingpanel-indicator-emoji-picker.png" alt="Emoji Picker">
+    </span>
+</div>
 
 ## Building and Installation
 
