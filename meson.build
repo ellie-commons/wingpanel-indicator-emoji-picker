@@ -38,6 +38,7 @@ shared_module(
     meson.project_name(),
     'src/Indicator.vala',
     'src/Objects/Emoji.vala',
+    'src/Settings/CustomShortcutSettings.vala',
     'src/Widgets/EmojiChild.vala',
     'src/Widgets/PopoverWidget.vala',
     config_file,
@@ -48,6 +49,7 @@ shared_module(
         dependency('granite', version: '>=6.0.0'),
         dependency('gtk+-3.0'),
         dependency('json-glib-1.0'),
+        dependency('libnotify'),
         wingpanel_dep
     ],
     install: true,

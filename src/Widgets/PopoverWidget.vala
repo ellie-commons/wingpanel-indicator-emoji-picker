@@ -75,8 +75,8 @@ public class EmojiIndicator.Widgets.PopoverWidget : Gtk.Grid {
 
     private void child_activated (Gtk.FlowBoxChild child) {
         var emoji = ((Widgets.EmojiChild) child).emoji;
-
         clipboard.set_text (emoji.emoji, -1);
+        
         popover.popdown ();
     }
 
