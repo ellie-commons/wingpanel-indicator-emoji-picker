@@ -4,6 +4,7 @@
 */
 
 public class EmojiIndicator.Indicator : Wingpanel.Indicator {
+    private static GLib.Settings settings;
     private Gtk.Image display_widget;
     private Widgets.PopoverWidget popover_widget;
 
@@ -23,7 +24,8 @@ public class EmojiIndicator.Indicator : Wingpanel.Indicator {
         // Set shortcut
         set_shortcut ();
 
-        visible = true;
+        settings = new GLib.Settings ("io.github.ellie_commons.indicator-emoji-picker");
+        settings.bind ("visible", this, "visible", GLib.SettingsBindFlags.DEFAULT);
     }
 
     public override Gtk.Widget get_display_widget () {
@@ -31,7 +33,7 @@ public class EmojiIndicator.Indicator : Wingpanel.Indicator {
             display_widget = new Gtk.Image () {
                 icon_name = "face-smile-symbolic",
                 pixel_size = 16
-            }; 
+            };
         }
 
         return display_widget;
@@ -63,7 +65,7 @@ public class EmojiIndicator.Indicator : Wingpanel.Indicator {
     }
 
     public override void closed () {}
-    
+
     private void set_shortcut () {
         Settings.CustomShortcutSettings.init ();
         bool has_shortcut = false;
@@ -85,7 +87,7 @@ public class EmojiIndicator.Indicator : Wingpanel.Indicator {
             }
         }
     }
-    
+
     private void send_power_notification () {
         var notification = new Notify.Notification (
             _("Keyboard Shortcut Configured"),
