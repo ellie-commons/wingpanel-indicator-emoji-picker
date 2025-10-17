@@ -2,7 +2,10 @@
 
 <div align="center">
   <h1 align="center">Emoji Picker</h1>
-  <h3 align="center">A sleek and fast emoji picker designed for elementary OS. Easily find and copy emojis with an intuitive and minimalist interface</h3>
+  <h3 align="center">A sleek and fast emoji picker designed for elementary OS. Easily find and copy emojis with an intuitive and minimalist interface<h3>
+      <a href="https://elementary.io">
+        <img src="https://ellie-commons.github.io/community-badge.svg" alt="Made for elementary OS">
+    </a>
 </div>
 
 <div align="center">

@@ -1,0 +1,21 @@
+Source: io.github.ellie-commons.wingpanel-indicator-emoji-picker
+Section: x11
+Priority: optional
+Maintainer: alainm23
+Build-Depends: debhelper (>= 10.5.1),
+               libglib2.0-dev,
+               libgranite-dev,
+               libgtk-3-dev (>= 3.12),
+               libwingpanel-dev,
+               meson (>= 0.58),
+               valac (>= 0.40.0)
+Standards-Version: 1.0.0
+Homepage: https://github.com/ellie-commons/wingpanel-indicator-emoji-picker
+
+Package: io.github.ellie-commons.wingpanel-indicator-emoji-picker
+Architecture: any
+Version: 1.1.0
+Depends: ${misc:Depends}, ${shlibs:Depends}, indicator-application
+Enhances: io.elementary.wingpanel
+Description: Wingpanel Indicator emoji-picker
+ Simply display an emoji picker in the elementary OS top bar
