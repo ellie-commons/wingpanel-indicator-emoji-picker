@@ -1,7 +1,10 @@
-
-.*
-!.gitignore
-!.editorconfig
+build/
+debian/.debhelper/
+debian/debhelper-build-stamp
+debian/files
+obj-*/
+.potrans/
+builddir/
+#IDE
 *~
-build/*
-.flatpak-builder/*
+~*

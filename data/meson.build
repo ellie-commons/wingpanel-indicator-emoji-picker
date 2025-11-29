@@ -17,3 +17,9 @@ install_data(
 #     install_dir: get_option('datadir') / 'glib-2.0' / 'schemas',
 #     rename: 'io.elementary.wingpanel.keyboard.gschema.xml'
 # )
+
+install_data (
+    'gschema.xml',
+    install_dir: get_option('datadir') / 'glib-2.0' / 'schemas',
+    rename: meson.project_name() + '.gschema.xml'
+)
